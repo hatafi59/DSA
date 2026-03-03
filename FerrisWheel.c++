@@ -13,11 +13,11 @@ void solve() {
     sort(vec.begin(), vec.end());
     int l=0,r=n-1, res=0;
     while(l<=r){
-	    if( vec[l]+vec[r]<=x)  l++;
+	    if(vec[l]+vec[r]<=x) l++;
         r--;
         res++;
     }
-    cout<<res<<endl;
+    cout<<res<<'\n';
     return;
 }
 int main(){
